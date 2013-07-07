@@ -1,0 +1,126 @@
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
+table, td, th{
+	border-spacing: 0px;
+	border-collapse:collapse;
+	padding:0px;
+}
+#viewport{
+	height: 100%;
+	width: 100%;
+}
+#viewport-tree{
+	width: 300px;
+	border-collapse:collapse;
+	border-right: 1px solid black;
+	overflow: auto;
+	height:100%;
+}
+#viewport-tree-owner{
+	width: 300px;
+}
+div{
+	vertical-align:top;
+}
+#viewport-tree{
+	vertical-align:top;
+}
+.tree-object{
+	display: inline-block;
+	width:100%;
+}
+.tree-node .tree-node-icon, .tree-node .tree-node-link, .tree-node .tree-node-sign, .tree-node .tree-inner-link{
+	cursor: pointer;
+}
+.tree-node{
+	height: 20px;
+	white-space:nowrap;
+}
+.tree-node:hover{
+	color: #00F;
+}
+.tree-node-spacer{
+	width: 20px;
+	height: 20px;
+	float:left;
+}
+.tree-node-elbow{
+	background-image: url(../images/tree-straight-down-cross.png);
+}
+.tree-node-elbow-last{
+	background-image: url(../images/tree-straight-down-cross-last.png);
+}
+.tree-node-expand{
+	background-image: url(../images/tree-plus-sign.png);
+}
+.tree-node-expand-last{
+	background-image: url(../images/tree-plus-sign-last.png);
+}
+.tree-node-expanded{
+	background-image: url(../images/tree-minus-sign.png);
+}
+.tree-node-expanded-last{
+	background-image: url(../images/tree-minus-sign-last.png);
+}
+.tree-node-spacer-down{
+	background-image: url(../images/tree-straight-down.png);
+}
+.text-node-is-symbolic{
+	color: red;
+}
+#viewport-content-owner{
+	vertical-align:top;
+	padding: 10px;
+}
+#viewport-content{
+	height:500px;
+	width: 100%;
+	text-align:left;
+	vertical-align:top;
+}
+#viewport-content textarea{
+	width:100%;
+}
+.content-loading-owner{
+	height: 0px;
+	width: 0px;
+	position:relative;
+}
+.content-loading-mask{
+	width: 500px;
+	height: 500px;
+	position:relative;
+	background: transparent center center no-repeat scroll url(../images/content-loading.gif);
+}
+div.tree-node-icon-loading{
+	background-image: url(../images/icon-loading.gif) !important;
+}
+.tree-node-icon{
+	width: 20px;
+	height: 20px;
+	float: left;
+	background-image: url(../images/icon-unknown.png);
+	background-repeat: no-repeat;
+}
+.tree-is-folder-not-expanded .tree-node-icon-type-folder{
+	background-image: url(../images/icon-folder.png);
+}
+.tree-is-folder-expanded .tree-node-icon-type-folder{
+	background-image: url(../images/icon-folder-open.png);
+}
+.tree-node-icon-type-jpeg,
+.tree-node-icon-type-jpg,
+.tree-node-icon-type-gif,
+.tree-node-icon-type-png,
+.tree-node-icon-type-tiff,
+.tree-node-icon-type-tif,
+.tree-node-icon-type-svg{
+	background-image: url(../images/icon-image.png) !important;
+}
+.tree-node-icon-type-text,
+.tree-node-icon-type-txt,
+.tree-node-icon-type-log{
+	background-image: url(../images/icon-text.png) !important;
+}
