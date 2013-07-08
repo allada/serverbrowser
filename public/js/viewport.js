@@ -150,7 +150,7 @@ if (!Array.prototype.indexOf) {
 								}
 								i++;
 							}
-							curNode = node.parent;
+							curNode = curNode.parent;
 						}
 					}
 				}
